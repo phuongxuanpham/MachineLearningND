@@ -13319,14 +13319,14 @@ Note that</p>
 <li>Investigate High Employee Turnover
 <a href="http://blog.minitab.com/blog/real-world-quality-improvement/using-binary-logistic-regression-to-investigate-high-employee-turnover">http://blog.minitab.com/blog/real-world-quality-improvement/using-binary-logistic-regression-to-investigate-high-employee-turnover</a></li>
 </ul>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Simple and easy to train.</li>
 <li>Fast prediction.</li>
 <li>Scales well to very large dataset.</li>
 <li>Works well with sparse data.</li>
 <li>Reasons for prediction are relatively easy to interpret.</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
 <li>For lower dimensional data, other models may have superior generalization performance.</li>
 <li>For classification, data may not be linearly separable.</li>
 </ul>
@@ -13348,30 +13348,28 @@ Note that</p>
 <p>References:
 Support Vector Machine Classification of Microarray Gene Expression Data, Michael P. S. Brown William Noble Grundy, David Lin, Nello Cristianini, Charles Sugnet, Manuel Ares, Jr., David Haussler 
 Text categorization with Support Vector Machines: learning with many relevant features T. Joachims, ECML - 98</p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Effective in high dimensional spaces.</li>
 <li>Still effective in cases where number of dimensions is greater than the number of samples.</li>
 <li>Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.</li>
 <li>Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels.</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
 <li>Efficiency (runtime speed and memory usage) descreases as training set size increases (e.g. over 50000 samples).</li>
 <li>Need careful normalization of input data and parameter tuning.</li>
 <li>Does not provide direct probability estimates (but can be estimated using e.g. Platt scaling).</li>
 <li>Difficult to interpret why a prediction was made.</li>
 </ul>
 <h5 id="3.-If-this-model-is-a-good-candidate-for-this-dataset">3. If this model is a good candidate for this dataset<a class="anchor-link" href="#3.-If-this-model-is-a-good-candidate-for-this-dataset">&#182;</a></h5><p>SVM has a lot of advantages where the # of samples of the dataset is small with k-fold cross validation but this dataset do have # of samples over 45000 so the efficiency (runtime speed and memory usage) descreases as training set size increases. If we consider much about the runtime efficiency, this model may be not a good candidate for this dataset.</p>
-<h4 id="C.-Stochastic-Gradient-Descent-Classifier-(SGDC)">C. Stochastic Gradient Descent Classifier (SGDC)<a class="anchor-link" href="#C.-Stochastic-Gradient-Descent-Classifier-(SGDC)">&#182;</a></h4><h5 id="1.-Real-world-application">1. Real-world application<a class="anchor-link" href="#1.-Real-world-application">&#182;</a></h5><p>Stochastic Gradient Descent (SGD) is a simple yet very efficient approach to discriminative learning of linear classifiers under convex loss functions such as (linear) Support Vector Machines and Logistic Regression. Even though SGD has been around in the machine learning community for a long time, it has received a considerable amount of attention just recently in the context of large-scale learning.
-SGD has been successfully applied to large-scale and sparse machine learning problems often encountered in text classification and natural language processing. Given that the data is sparse, the classifiers in this module easily scale to problems with more than 10^5 training examples and more than 10^5 features.
-In business, SGD is used to evaluating the performance contribution of employees.</p>
-<p>Refererence: Application of Stochastic Gradient Descent Algorithm in Evaluating the Performance Contribution of Employees (<a href="http://www.iosrjournals.org/iosr-jbm/papers/Vol16-issue6/Version-3/I016637780.pdf">http://www.iosrjournals.org/iosr-jbm/papers/Vol16-issue6/Version-3/I016637780.pdf</a>)</p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h4 id="C.-Stochastic-Gradient-Descent-Classifier-(SGDC)">C. Stochastic Gradient Descent Classifier (SGDC)<a class="anchor-link" href="#C.-Stochastic-Gradient-Descent-Classifier-(SGDC)">&#182;</a></h4><h5 id="1.-Real-world-application">1. Real-world application<a class="anchor-link" href="#1.-Real-world-application">&#182;</a></h5><p>Stochastic Gradient Descent (SGD) is a simple yet very efficient approach to discriminative learning of linear classifiers under convex loss functions such as (linear) Support Vector Machines and Logistic Regression. Even though SGD has been around in the machine learning community for a long time, it has received a considerable amount of attention just recently in the context of large-scale learning.</p>
+<p>In other words, this is a Linear classifiers (SVM, logistic regression, a.o.) with SGD training: the gradient of the loss is estimated each sample at a time and the model is updated along the way with a decreasing strength schedule (aka learning rate).</p>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Efficiency.</li>
 <li>Ease of implementation (lots of opportunities for code tuning).</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
-<li>SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations.</li>
-<li>SGD is sensitive to feature scaling.</li>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<li>SGDC requires a number of hyperparameters such as the regularization parameter and the number of iterations.</li>
+<li>SGDC is sensitive to feature scaling.</li>
 </ul>
 <h5 id="3.-If-this-model-is-a-good-candidate-for-this-dataset">3. If this model is a good candidate for this dataset<a class="anchor-link" href="#3.-If-this-model-is-a-good-candidate-for-this-dataset">&#182;</a></h5><p>This model is a good candidate for its efficiency and data scaling. However, this model is sensitive to feature scaling, which may reduce the performance of the models if more features are collected.</p>
 <h4 id="D.-Gaussian-Naive-Bayes-(GaussianNB)">D. Gaussian Naive Bayes (GaussianNB)<a class="anchor-link" href="#D.-Gaussian-Naive-Bayes-(GaussianNB)">&#182;</a></h4><h5 id="1.-Real-world-application">1. Real-world application<a class="anchor-link" href="#1.-Real-world-application">&#182;</a></h5><p>Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of independence between every pair of features. In spite of their apparently over-simplified assumptions, naive Bayes classifiers have worked quite well in many real-world situations, famously document classification and spam filtering. 
@@ -13383,17 +13381,17 @@ Other of real world examples are:</p>
 </ul>
 <p>References:</p>
 <p><a href="https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/">https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/</a></p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Require a small amount of training data to estimate the necessary parameters. </li>
 <li>Naive Bayes learners and classifiers can be extremely fast compared to more sophisticated methods. The decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of dimensionality.</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><p>Although naive Bayes is known as a decent classifier, it is known to be a bad estimator, so the probability outputs are not to be taken too seriously.</p>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><p>Although naive Bayes is known as a decent classifier, it is known to be a bad estimator, so the probability outputs are not to be taken too seriously.</p>
 <h5 id="3.-If-this-model-is-a-good-candidate-for-this-dataset">3. If this model is a good candidate for this dataset<a class="anchor-link" href="#3.-If-this-model-is-a-good-candidate-for-this-dataset">&#182;</a></h5><p>This model will not be a good candidate despite its fast implementation because its poor estimation output, will cause bad classification.</p>
 <h4 id="E.-Decision-Trees">E. Decision Trees<a class="anchor-link" href="#E.-Decision-Trees">&#182;</a></h4><h5 id="1.-Real-world-application">1. Real-world application<a class="anchor-link" href="#1.-Real-world-application">&#182;</a></h5><p>Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression. The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.</p>
 <p>Decision Trees has popular applications in industry and business. See references:</p>
 <p><a href="http://what-when-how.com/artificial-intelligence/decision-tree-applications-for-data-modelling-artificial-intelligence/">http://what-when-how.com/artificial-intelligence/decision-tree-applications-for-data-modelling-artificial-intelligence/</a></p>
 <p><a href="https://gbr.pepperdine.edu/2010/08/how-gerber-used-a-decision-tree-in-strategic-decision-making/">https://gbr.pepperdine.edu/2010/08/how-gerber-used-a-decision-tree-in-strategic-decision-making/</a></p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Simple to understand and to interpret. Trees can be visualised.</li>
 <li>Requires little data preparation. Other techniques often require data normalisation, dummy variables need to be created and blank values to be removed. Note however that this module does not support missing values.</li>
 <li>The cost of using the tree (i.e., predicting data) is logarithmic in the number of data points used to train the tree.</li>
@@ -13403,7 +13401,7 @@ Other of real world examples are:</p>
 <li>Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the model.</li>
 <li>Performs well even if its assumptions are somewhat violated by the true model from which the data were generated.</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
 <li>Decision-tree learners can create over-complex trees that do not generalise the data well. This is called overfitting. Mechanisms such as pruning (not currently supported), setting the minimum number of samples required at a leaf node or setting the maximum depth of the tree are necessary to avoid this problem.</li>
 <li>Decision trees can be unstable because small variations in the data might result in a completely different tree being generated. This problem is mitigated by using decision trees within an ensemble.</li>
 <li>The problem of learning an optimal decision tree is known to be NP-complete under several aspects of optimality and even for simple concepts. Consequently, practical decision-tree learning algorithms are based on heuristic algorithms such as the greedy algorithm where locally optimal decisions are made at each node. Such algorithms cannot guarantee to return the globally optimal decision tree. This can be mitigated by training multiple trees in an ensemble learner, where the features and samples are randomly sampled with replacement.</li>
@@ -13421,10 +13419,10 @@ The principle behind nearest neighbor methods is to find a predefined number of 
 <p>References:</p>
 <p>Herta Security uses deep learning algorithms to generate feature vectors representing people’s faces. They then use k-NN to identify a person by compare the face to their watchlist. <a href="http://www.hertasecurity.com/en/">http://www.hertasecurity.com/en/</a></p>
 <p>Applications are based on trying to take a more nuanced look at data sets e.g. <a href="http://www.ijera.com/papers/Vol3">http://www.ijera.com/papers/Vol3</a>... is a study by Iranians on how to predict financial distress. This is a common topic for banks but KNN provides a list of candidates for perhaps further rule processing as opposed to 1 prime candidate for financial distress.</p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Being a non-parametric method, it is often successful in classification situations where the decision boundary is very irregular.</li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<h5 id="3.-The-weakness-of-the--model-and-when-it-performs-poorly">3. The weakness of the  model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the--model-and-when-it-performs-poorly">&#182;</a></h5><ul>
 <li>Neighbors-based methods are known as non-generalizing machine learning methods, since they simply “remember” all of its training data </li>
 <li>Memory and runtime inefficiency if training dataset is large.</li>
 </ul>
@@ -13443,7 +13441,7 @@ The principle behind nearest neighbor methods is to find a predefined number of 
 <p>References:</p>
 <p><a href="http://www.netflixprize.com/">http://www.netflixprize.com/</a></p>
 <p><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.133.6529&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.133.6529&amp;rep=rep1&amp;type=pdf</a></p>
-<h5 id="2.-The-strengths-of-the-the-model-and-when-it-performs-well">2. The strengths of the the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
+<h5 id="2.-The-strengths-of-the-model-and-when-it-performs-well">2. The strengths of the model and when it performs well<a class="anchor-link" href="#2.-The-strengths-of-the-model-and-when-it-performs-well">&#182;</a></h5><ul>
 <li>Bagged Trees: train multiple trees using bootstrapped data to reduce variance and prevent overfitting<ul>
 <li>reduces variance in comparison to regular decision trees. </li>
 <li>Can provide variable importance measures</li>
@@ -13462,7 +13460,7 @@ The principle behind nearest neighbor methods is to find a predefined number of 
 </ul>
 </li>
 </ul>
-<h5 id="3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">3. The weakness of the the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
+<h5 id="3.-The-weakness-of-the-model-and-when-it-performs-poorly">3. The weakness of the model and when it performs poorly<a class="anchor-link" href="#3.-The-weakness-of-the-model-and-when-it-performs-poorly">&#182;</a></h5><ul>
 <li>Bagged Trees: Not easy to visually interpret and does not reduce variance if the features are correlated</li>
 <li>Boosted Trees: can overfit if number of trees is too large</li>
 <li>Random Forest: not easy to visually interpret, can overfit if number of trees is too large</li>
@@ -15243,7 +15241,15 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>AdaBoost is an ensemble learning method for primarily reducing bias, and also variance in supervised learning which linearly combines a sequence of weak learners to a strong one through a repeatedly modified training process and on weighted training data. Weak learners could be the simple models, such as one-level Decision Tree which selects a threshold for one feature and splits the data on that threshold (usually called decision stumps). The data modifications at each boosting iteration will apply weights w_1, w_2, ..., w_N to each of the training samples. Initially, those weights are all set to w_i = 1/N, so that the first step simply trains a weak learner on the original data. For each successive iteration, the sample weights are individually modified based on the prediction result and the corrected result. The training weights are updated giving more weight to incorrectly predicted instances, and less weight to correctly predicted instances. The learning algorithm is reapplied to the reweighted data in the next training iterations. In that way, the instances that are difficult to predict receive more influence. The training process continues until a pre-set number of weak learners have been created (a user parameter) or no further improvement can be made on the training dataset. The predictions from all of them are then combined through a weighted majority vote (or sum) to produce the final prediction.</p>
+<p>AdaBoost is an ensemble learning method which linearly combines a sequence of weak learners to a strong one through a repeatedly modified training process and on weighted training data. AdaBoost can be described in simple way as follow:</p>
+<ol>
+<li>Select weak learners which could be simple learning algorithms, such as one-level Decision Tree which selects a threshold for one feature and splits the data on that threshold (usually called decision stumps). </li>
+<li>Apply the selected weak learner on the original data and get the classification result. For example, we have 100 samples, and get 70 correct, 30 wrong. This is called a training step or iteration.</li>
+<li>Now we will modify data by applying new weights for samples of the training data. Weights are updated giving more weight to incorrectly predicted samples, and less weight to correctly predicted samples. In that way, the samples that are difficult to predict receive more influence. </li>
+<li>Go back to step 2, but applying it to the reweighted training data from step 3. Since the training data is reweighted to increase weight for the misclassified samples, this time the weak learner may give better result, for example 72 correct, 28 wrong. Keep repeating this process, each time producing a new classifier. </li>
+<li>The training process continues until a pre-set number of weak learners have been created (a user parameter) or no further improvement can be made on the training dataset.</li>
+<li>The predictions from all of them are then combined through a weighted majority vote (or sum) to produce the final prediction. </li>
+</ol>
 <p>AdaBoost can be used to boost the performance of any machine learning algorithm.</p>
 
 </div>
