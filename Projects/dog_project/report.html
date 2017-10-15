@@ -13455,7 +13455,7 @@ Percentage of the first 100 images in dog_files have a detected human face: 11%
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 2:</strong> This algorithmic choice necessitates that we communicate to the user that we accept human images only when they provide a clear view of a face (otherwise, we risk having unneccessarily frustrated users!). In your opinion, is this a reasonable expectation to pose on the user? If not, can you think of a way to detect humans in images that does not necessitate an image with a clearly presented face?</p>
 <p><strong>Answer:</strong></p>
-<p>We suggest the face detector from OpenCV as a potential way to detect human images in your algorithm, but you are free to explore other approaches, especially approaches that make use of deep learning :).  Please use the code cell below to design and test your own face detection algorithm.  If you decide to pursue this <em>optional</em> task, report performance on each of the datasets.</p>
+<p>The fact that this human detector algorithm only accepts clear view of face for good detection performance is a limit of this algorithm because faces in images are not always in right of view position. A robust algorithm should be able to detect face in any angle or not clear view. We can build an CNN network from scratch to learn face features from human database or use transfer learning from well-known network and retrain with our human database.</p>
 
 </div>
 </div>
@@ -15621,7 +15621,7 @@ I used the face_detector and dog_detector functions developed above for human an
 <p>There are some points that I can improve for this algorithm:</p>
 <ul>
 <li>Develop or use better face_detector function for better human detection, especially faces with beard.</li>
-<li>In this algorithm, if the face_detector function did a false positive (for example detecting dog as human) and if the dog_detector works well (detecting dog as dog) the result still wrong due to face_detector's output is resulted.  We can improve this step, for example combining outputs of face_detector and dog_dectector functions with more weight for dog_dectector output.</li>
+<li>In this algorithm, if the face_detector function does a false positive (for example detecting dog as human) and if the dog_detector works well (detecting dog as dog) the result is still wrong due to face_detector's output is resulted.  We can improve this step, for example combining outputs of face_detector and dog_dectector functions with more weight for dog_dectector output.</li>
 <li>Combine face detection in dog_detector function by rebuilding an CNN network based on pre-trained ResNet-50 model but add 1 more output at the last dense layer (134 intead of 133) and re-train the network with human dataset and dog dataset.</li>
 </ul>
 
